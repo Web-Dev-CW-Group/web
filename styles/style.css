@@ -192,27 +192,35 @@ dark blue - rgb(5, 5, 116)
     color: white;
   }
 
-  /* Student Details */
+  /* ----------------------------------- Student Details ----------------------------------- */
   #card-container{
-    margin: 0 50px;
     height: 50vh;
   }
+
   .card{
     color: black;
-    max-width: 300px;
-    max-height: 400px;
+    max-width: 25vw;
+    max-height: 60vh;
     margin: auto;
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    transition: 0.3s;
+    overflow: hidden;
   }
 
   .card img{
-    /* width: 100px; */
+    padding: 10px;
+    border-radius: 20px;
     height: 300px;
+    width:300px;
   }
 
   .card p{
+    padding: 10px;
     opacity: 0;
     text-align: center;
+    z-index: 2;
   }
 
   .card:hover {
@@ -221,7 +229,6 @@ dark blue - rgb(5, 5, 116)
 
   .card:hover p{
     opacity: 1;
-    
   }
 
   #topic{
