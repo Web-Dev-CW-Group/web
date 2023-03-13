@@ -5,31 +5,33 @@ dark blue - rgb(5, 5, 116)
 */
 
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .logo{
+    margin: 0;
   }
 
   nav{
-    background:rgba(10, 6, 226, 0.432) ;
-    height: 100px;
-
+    background:rgba(6, 3, 168, 0.584) ;
+    height: 80px;
+    
   }
 
   .nav__link{
     display: inline-block;
-    line-height: 50px;
+    /* line-height: 50px; */
     margin: 0px;
-  }
-  
-  body {
-    font-family: 'Times New Roman', Times, serif;
+    
   }
   
   a {
     text-decoration: none;
-    color: black;
-    font-size: 1.1rem;
+    color: white;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: none;
   }
@@ -46,7 +48,6 @@ dark blue - rgb(5, 5, 116)
     height: 80px;
     margin-left: 0.8px;
   }
-  
   
   .hamburger {
     padding-right: 20px;
@@ -78,14 +79,14 @@ dark blue - rgb(5, 5, 116)
   
   .nav__link a:hover {
     background-color: rgb(14, 28, 218);
-    size: 30px;
+    /* size: 20px; */
   }
   
   .hide {
     display: none;
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 950px) {
     .nav__link {
       display: block;
       position: static;
@@ -110,128 +111,7 @@ dark blue - rgb(5, 5, 116)
     background-size: cover;
     height: 100%;
 }
-  /*                Thejan Vithanage
-  ----------------------- Quiz -----------------------  
-  */
-
-  footer{
-    position: absolute;
-    bottom: 0;
-    display: inline-flex;
-    height: 6vh;
-    width: 100vw;
-    background-color: rgb(49, 50, 50);
-    color: white;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    color: white;
-  }
-
-  .quiz-container{
-    background-color: blueviolet;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 50vw;
-    min-width: 500px;
-    min-height: 300px;
-  }
-
-  #header{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #question{
-    margin: 10px;
-    padding: 50px 20px;
-    border: 1px solid white;
-    border-radius: 10px;
-    font-weight:bold;
-  }
-
-  #answers-wrapper{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px;
-    grid-template-rows: minmax(50px,auto);
-    margin: 20px 10px 10px 10px;
-  }
-
-  .answers{
-    border: 1px solid white;
-    background-color: blueviolet;
-    color: white;
-    border-radius: 5px;
-    padding: 20px 50px;
-    cursor: pointer;
-    height: 100%;
-  }
-
-  .answers:hover{
-    background-color: rgba(73, 28, 116, 0.63);
-  }
-
-  #next-question{
-    padding: 15px 40px;
-    margin: 10px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-  }
-
-  #next-question:hover{
-    background-color: rgb(255, 3, 175);
-    color: white;
-  }
-
-  /* ----------------------------------- Student Details ----------------------------------- */
-  #card-container{
-    height: 50vh;
-  }
-
-  .card{
-    color: black;
-    max-width: 25vw;
-    max-height: 60vh;
-    margin: auto;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 10px;
-    transition: 0.3s;
-    overflow: hidden;
-  }
-
-  .card img{
-    padding: 10px;
-    border-radius: 20px;
-    height: 300px;
-    width:300px;
-  }
-
-  .card p{
-    padding: 10px;
-    opacity: 0;
-    text-align: center;
-    z-index: 2;
-  }
-
-  .card:hover {
-    opacity: 0.7;
-  }
-
-  .card:hover p{
-    opacity: 1;
-  }
-
-  #topic{
-    text-align: center;
-    margin-top: 40px;
-  } 
+ 
+footer a{
+  color: white;
+}

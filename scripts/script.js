@@ -9,12 +9,10 @@ hamburger.addEventListener('click', () => {
 
 // Thejan Vithanage
 // Quiz
+function setNextQuestion() {
+  
+}
 
-const question_no = document.querySelector("p")
-const a1 = document.querySelector("input");
-
-question.addEventListener("click",update)
-
-function update() {
-  question.textContent = a1;
+function selectAnswer() {
+  
 }

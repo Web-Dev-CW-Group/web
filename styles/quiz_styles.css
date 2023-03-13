@@ -1,0 +1,130 @@
+:root{
+  color: white;
+}
+body{
+  background-image: url("https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  display: inline-flex;
+  height: 6vh;
+  width: 100vw;
+  background-color: rgba(49, 50, 50, 0.785);
+  justify-content: center;
+  align-items: center;
+}
+#wrapper{
+  font-weight: 600;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quiz-container{
+  /* display: none;  */
+  background-color: rgba(137, 43, 226, 0.821);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 500px;
+  min-width: 300px;
+  min-height: 300px;
+}
+#header{
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#question{
+  margin: 10px;
+  padding: 50px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.btn-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  grid-template-rows: minmax(50px,auto);
+  margin: 20px 10px 10px 10px;
+}
+.btn{
+  font-weight: 600;
+}
+.btn-grid .btn {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px 50px;
+  cursor: pointer;
+  /* height: 100%; */
+  width: 100%;
+  border: none;
+}
+.btn-grid .btn:hover{
+  background-color: rgb(64, 0, 120);
+  color: white;
+}
+.answers:hover{
+  background-color: rgba(73, 28, 116, 0.63);
+}
+#next-btn{
+  font-weight: bold;
+  padding: 15px 40px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+#next-btn:hover{
+  background-color: rgb(255, 3, 175);
+  color: white;
+}
+#start-btn{
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+  border: none;
+  font-size: larger;
+  font-weight: 800;
+}
+#start-btn:hover{
+  box-shadow: 9px 9px 16px 0 rgba(0, 0, 0, 0.316);
+  background-color: rgb(226, 224, 224);
+  cursor: pointer;
+  border: 5px solid rgba(0, 0, 0, 0.688);
+}
+@media only screen and (max-width: 600px) {
+  .btn-grid .btn {
+    border-radius: 5px;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+  }
+}
+/* @media only screen and (min-width: 600px) {
+  :root{
+    color: yellow;
+    background-color: aquamarine;
+  }
+}
+@media only screen and (min-width: 768px) {
+  :root{
+    color: yellow;
+    background-color: blue;
+  }
+}
+@media only screen and (min-width: 992px) {
+  :root{
+    color: green;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  :root{
+    color: blue;
+    background-color: chartreuse;
+  }
+} */
