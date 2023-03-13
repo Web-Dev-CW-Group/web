@@ -1,0 +1,48 @@
+.card{
+    width:400px ;
+    height: 300px;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(../images/img.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-color: #0f0d0d;
+  }
+  .card1{
+  background-image: url(../images/novel.jpg);
+  }
+  .card2{
+  background-image: url(../images/short.jpg);
+  }
+  .card3{
+  background-image: url(../images/poetry.avif);
+  }
+  .card4{
+  background-image: url(../images/translation.jpg);
+  }
+  .card p{
+    padding: 10px;
+    padding-top: 0;
+    opacity: 0;
+    text-align: center;
+    z-index: 2;
+    font-weight: 600;
+  }
+  body{
+    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url("https://images.unsplash.com/photo-1566410824233-a8011929225c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+  }
+  footer{
+    position: absolute;
+    bottom: 0;
+    display: inline-flex;
+    height: 6vh;
+    width: 100vw;
+    background-color: rgba(49, 50, 50, 0.785);
+    justify-content: center;
+    align-items: center;
+  }
