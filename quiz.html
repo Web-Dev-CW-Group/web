@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/quiz_styles.css">
 </head>
 <body>
     <!-- Thejan Vithanage -->
     <header>
       <nav class="nav">
-        <div class="logo"><a href ="#"><img src="Images/2.PNG"></a></div>
+        <div class="logo"><a href ="index.html"><img src="images/logo.png"></a></div>
         <div class="hamburger">
           <span class="line"></span>
           <span class="line"></span>
@@ -27,28 +28,26 @@
         </div>
       </nav>
     </header>
-
-      <div class="body">
-        <div class="quiz-container">
+    <div id="wrapper">
+      <div class="quiz-container">
           <div id="header">
             <p id="question-no">Question: 1/10</p>
             <p id="time">Time: 60</p>
           </div>
           <p id="question">Test One</p>
-          <form>
-            <div id="answers-wrapper">
-              <input type="button" class="answers" id="a1" value="One">
-              <input type="button" class="answers" id="a2" value="Two">
-              <input type="button" class="answers" id="a3" value="Three">
-              <input type="button" class="answers" id="a4" value="Four">
-            </div>
-          </form>
-          <input type="button" id="next-question" value="Next Question"></button>
-        </div>
+          <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+          </div>
+          <button class="btn" id="next-btn">Next Question</button>
       </div>
+      <!-- <button class="btn" id="start-btn">Start</button> -->
+    </div>
       <footer>
-        <p>Copyright &copy; Thejan Vithanage</p>
+        <p>Copyright &copy; <a href="page_editor.html">Thejan Vithanage</a></p>
       </footer>
-      <script src="/Scripts/script.js"></script>
+      <script src="/scripts/script.js"></script>
 </body>
 </html>

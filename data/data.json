@@ -1,0 +1,19 @@
+{
+	"questions": [
+		{
+			"question": "What is the capital of France?",
+			"choices": ["London", "Paris", "Berlin"],
+			"answer": "Paris"
+		},
+		{
+			"question": "What is the largest country in the world?",
+			"choices": ["Russia", "China", "USA"],
+			"answer": "Russia"
+		},
+		{
+			"question": "What is the currency of Japan?",
+			"choices": ["Yen", "Dollar", "Euro"],
+			"answer": "Yen"
+		}
+	]
+}
