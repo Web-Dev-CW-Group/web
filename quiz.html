@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +7,21 @@
     <title>Quiz</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/quiz_styles.css">
+    
+    <script type="module" src="/scripts/script.js" ></script>
+    <script type="module" src="/scripts/quiz_script.js" ></script>
 </head>
 <body>
     <!-- Thejan Vithanage -->
     <header>
       <nav class="nav">
-        <div class="logo"><a href ="index.html"><img src="images/logo.png"></a></div>
+        <div class="logo"><a href ="index.html"><img src="Images/logo.png"></a></div>
         <div class="hamburger">
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
         </div>
-        <div class="nav__link hide">
+        <div class="nav__link">
           <a href="index.html">Home</a>
           <a href="#">Buy Product</a>
           <a href="quiz.html">Quiz</a>
@@ -29,25 +32,31 @@
       </nav>
     </header>
     <div id="wrapper">
-      <div class="quiz-container">
+      <div class="container hide" id="quiz-container">
           <div id="header">
             <p id="question-no">Question: 1/10</p>
-            <p id="time">Time: 60</p>
+            <p id="test"></p>
+            <p >Time: <span id="time">60</span></p>
           </div>
           <p id="question">Test One</p>
           <div id="answer-buttons" class="btn-grid">
-            <button class="btn">Answer 1</button>
+            <button class="btn" id="one">Answer 1</button>
             <button class="btn">Answer 2</button>
             <button class="btn">Answer 3</button>
             <button class="btn">Answer 4</button>
-          </div>
+          </div> 
           <button class="btn" id="next-btn">Next Question</button>
+          <button class="btn hide" id="submit-btn">Finish</button>
       </div>
-      <!-- <button class="btn" id="start-btn">Start</button> -->
+      <button class="btn " id="start-btn">Start</button>
+      <div class="container hide" id="result-wrapper">
+        <h2>Result</h2>
+        <hr>
+        <div id="results"></div>
+      </div>
     </div>
-      <footer>
-        <p>Copyright &copy; <a href="page_editor.html">Thejan Vithanage</a></p>
-      </footer>
-      <script src="/scripts/script.js"></script>
+    <footer>
+      <p>Copyright &copy; <a href="page_editor_thejan.html">Thejan Vithanage</a></p>
+    </footer>
 </body>
 </html>
