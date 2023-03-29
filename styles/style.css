@@ -6,7 +6,7 @@ dark blue - rgb(5, 5, 116)
 
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 1;
     padding: 0;
     font-family:Georgia, 'Times New Roman', Times, serif;
   }
@@ -88,7 +88,7 @@ dark blue - rgb(5, 5, 116)
 
   @media screen and (min-width: 950px) {
     .nav__link {
-      display: block;
+      /* display: block; */
       position: static;
       width: auto;
       margin-right: 20px;
