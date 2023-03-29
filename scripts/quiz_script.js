@@ -1,5 +1,6 @@
 // import quastions and answers from json file
-import questions from "../data/data.json" assert { type: "json" };
+// import questions from "../data/data.json" assert { type: "json" };
+import questions from "../data/data.js";
 
 const startBtn = document.getElementById('start-btn')
 const questionNo = document.getElementById('question-no')
