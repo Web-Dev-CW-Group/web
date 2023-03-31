@@ -1,0 +1,52 @@
+body {
+    background-image: url(https://img.freepik.com/free-photo/closeup-books-wellorganized-shelves-bookstore_181624-59731.jpg?size=626&ext=jpg&ga=GA1.2.85541617.1680184850&semt=ais);
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+    color: #000000;
+}
+hr {
+    border: 1px solid #060133;
+}
+#page {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    
+}
+#testpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    color: black;
+    text-align: center;
+    display: flex-box;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#name{
+    line-height: 1.8;
+}
+.blue{
+    color: hsl(245, 22%, 90%);
+    
+}
+button{
+    width: 100px;
+    height: 30px;
+
+}
