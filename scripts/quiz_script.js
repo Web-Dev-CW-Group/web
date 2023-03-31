@@ -1,6 +1,6 @@
 // import quastions and answers from json file
 // import questions from "../data/data.json" assert { type: "json" };
-import questions from "../data/data.js";
+import questions from "./data.js";
 
 const startBtn = document.getElementById('start-btn')
 const questionNo = document.getElementById('question-no')
@@ -38,7 +38,7 @@ function displayColor(params) {
 function startGame() {
   results = 0
   startBtn.classList.add('hide')
-  shuffledQuestions = questions.sort(() => Math.random() - .5)
+  shuffledQuestions = questions
   currentQuestionIndex = 0
   quizContainerElement.classList.remove('hide')
   setNextQuestion()

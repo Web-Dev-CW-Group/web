@@ -1,33 +1,24 @@
-/* 
-light blue - rgb(6, 120, 226)
-other blue - rgb(14, 160, 218)
-dark blue - rgb(5, 5, 116)
-*/
-
+:root{
+  --light-blue: rgb(6, 120, 226);
+  --other-blue: rgb(14, 160, 218);
+  --dark-blue: rgba(5, 5, 116, 0.589);
+}
 * {
     box-sizing: border-box;
     padding: 0;
     font-family:Georgia, 'Times New Roman', Times, serif;
   }
 body{
-  margin: 0 0;
+  margin: 0;
 }
   .logo{
     margin: 0;
   }
 
   nav{
-    background:rgba(6, 3, 168, 0.584) ;
+    background:var(--dark-blue);
     height: 80px;
   }
-
-  .nav__link{
-    display: inline-block;
-    /* line-height: 50px; */
-    margin: 0px;
-    
-  }
-  
   a {
     text-decoration: none;
     color: white;
@@ -36,7 +27,6 @@ body{
     text-transform: none;
   }
 
-  /* nav styles */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -60,14 +50,15 @@ body{
     margin-bottom: 10px;
     background-color: black;
   }
-  
   .nav__link {
+    display: inline-block;
+    margin: 0px;
     position: fixed;
     height: 100%;
     width: 105%;
     top: 6.2rem;
     left: 0px;
-    background-color: rgba(15, 145, 221, 0.87);
+    background-color: var(--other-blue);
   }
   
   .nav__link a {
@@ -77,8 +68,7 @@ body{
   }
   
   .nav__link a:hover {
-    background-color: rgb(14, 28, 218);
-    /* size: 20px; */
+    background-color: var(--dark-blue);
   }
   
   .hide {
@@ -87,7 +77,6 @@ body{
 
   @media screen and (min-width: 950px) {
     .nav__link {
-      /* display: block; */
       position: static;
       width: auto;
       margin-right: 20px;
@@ -103,14 +92,18 @@ body{
       display: none;
     }
   }
-
-  .main{
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-}
- 
 footer a{
   color: white;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  display: inline-flex;
+  height: 6vh;
+  width: 100vw;
+  background-color: rgba(49, 50, 50, 0.688);
+  color: white;
+  justify-content: center;
+  align-items: center;
 }
