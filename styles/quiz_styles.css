@@ -1,12 +1,7 @@
-:root{
-  color: white;
-  --hue-neutral: 200;
-  --hue-wrong: 0;
-  --hue-correct: 145;
-}
 body{
   background-image: url(../images/quiz_cover.webp);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 @media only screen and (max-width: 400px) {
   body{
@@ -81,13 +76,6 @@ footer{
   cursor: pointer;
   width: 100%;
 }
-/* .btn-grid .btn:hover{
-  background-color: rgb(64, 0, 120);
-  color: white;
-} */
-/* .answers:hover{
-  background-color: rgba(73, 28, 116, 0.63);
-} */
 #next-btn, #submit-btn{
   font-weight: bold;
   padding: 15px 40px;
@@ -137,26 +125,3 @@ footer{
   background-color: red;
   color: black;
 }
-/* @media only screen and (min-width: 600px) {
-  :root{
-    color: yellow;
-    background-color: aquamarine;
-  }
-}
-@media only screen and (min-width: 768px) {
-  :root{
-    color: yellow;
-    background-color: blue;
-  }
-}
-@media only screen and (min-width: 992px) {
-  :root{
-    color: green;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  :root{
-    color: blue;
-    background-color: chartreuse;
-  }
-} */

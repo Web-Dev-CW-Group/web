@@ -1,64 +1,95 @@
 body{
-    background-image: url("https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
-    background-size: cover;
-    color: white;
+  background-image: url(../images/photo-1458682625221-3a45f8a844c7.webp);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  color: white;
+}
+h1{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2rem;
+}
+#card-container{
+  height: 59vh;
+  display: flex;
+  justify-content: center;
+  align-content: baseline;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  margin-top: 100px;
+}
+.card{ 
+  background-color: rgba(4, 1, 54, 0.592);
+  color: white;
+  max-width: 300px;
+  max-height: 350px;
+  height: 250px;
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.card img{
+  padding: 10px;
+  border-radius: 20px;
+  height: 250px;
+  width:250px;
+}
+.card p{
+  line-height: 1.8;
+  padding-top: 0;
+  opacity: 0;
+  text-align: center;
+  z-index: 2;
+  font-weight: 600;
+}
+.card:hover {
+  background-color: rgba(4, 1, 54, 0.796);
+  border: 5px solid white;
+  height: 350px;
+}
+.card:hover img{
+  width: 240px;
+}
+.card:hover p{
+  opacity: 1;
+} 
+@media only screen and (max-width: 400px) {
+  body{
+    background-image: url(../images/photo-1458682625221-3a45f8a844c7_480.webp);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card{
+    width: 150px;
+    height: 150px;
+    
   }
   #card-container{
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
+    font-size: x-small;
+    margin-top: 50px;
   }
-  footer{
-    position: absolute;
-    bottom: 0;
-    display: inline-flex;
-    height: 6vh;
-    width: 100vw;
-    background-color: rgb(49, 50, 50);
-    color: white;
-    justify-content: center;
-    align-items: center;
-  }
-  .card{ 
-    background-color: rgba(4, 1, 54, 0.592);
-    color: white;
-    max-width: 300px;
-    max-height: 350px;
-    margin: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 10px;
-    transition: 0.3s;
-    overflow: hidden;
+  .card a{
+    font-size: x-small;
   }
   .card img{
-    padding: 10px;
-    padding-bottom: 0;
-    border-radius: 20px;
-    height: 250px;
-    width:250px;
+    padding: 5px;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;;
   }
-  .card p{
-    padding: 10px;
-    padding-top: 0;
-    opacity: 0;
-    text-align: center;
-    z-index: 2;
-    font-weight: 600;
-  }
-
-  .card:hover {
-    background-color: rgba(4, 1, 54, 0.796);
-    border: 5px solid white;
-  }
-
   .card:hover p{
-    opacity: 1;
-  }
-
-  #topic{
-    text-align: center;
-    margin-top: 40px;
+    margin-top: 0;
   } 
+  .card:hover {
+    height: 200px;
+    /* padding: 0; */
+  }
+  .card:hover img{
+    width: 140px;
+    height: auto;
+  }
+}

@@ -118,4 +118,6 @@ const quiz = [
     }
   ]
 
-  export default quiz
+  let questions = quiz.sort(() => Math.random() - .5).slice(0, 10)
+
+  export default questions
