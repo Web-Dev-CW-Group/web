@@ -3,69 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page editor sajilani </title>
     <style>
-body {
-    background-image: url(https://img.freepik.com/free-photo/open-book-with-fairytale-scene_52683-107843.jpg?size=626&ext=jpg&ga=GA1.2.85541617.1680184850&semt=ais);
-    background-color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    background-size: cover;
-}
-h1 {
-    text-align: center;
-    color: #000000;
-}
-hr {
-    border: 1px solid #060133;
-}
-#page {
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap:wrap;
-    
-}
-#testpage {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.card{
-    color: black;
-    text-align: center;
-    display: flex-box;
-    justify-content: center;
-    width: 300px;
-    height: 200px;
-    background-color: #ffffff;
-    margin: 10px;
-    padding: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-#name{
-    line-height: 1.8;
-}
-.blue{
-    color: hsl(245, 22%, 90%);
-    
-}
-button{
-    width: 100px;
-    height: 30px;
-}
-.white{
-    color: #fff;
-}
+        body {
+            background-image: url(/images/open-book-with-fairytale-scene_52683-107843.webp);
+            background-color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            color: #000000;
+            text-align: center;
+        }
+        h2{
+            font-size: 16px;
+        }
+        hr {
+            border: 1px solid #060133;
+        }
+        #page {
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap:wrap;
+            
+        }
+        #testpage {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            color: black;
+            text-align: center;
+            display: flex-box;
+            justify-content: center;
+            width: 300px;
+            height: 200px;
+            background-color: #ffffff;
+            margin: 10px;
+            padding: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #name{
+            line-height: 1.8;
+        }
+        .blue{
+            color: hsl(245, 22%, 90%);
+            
+        }
+        button{
+            width: 100px;
+            height: 30px;
+        }
+        .white{
+            color: #fff;
+        }
 
 </style>
 </head>
 <body>
     <div id="page">
-        <h1 class="blue" style="text-align: center;">My Page Editor</h1>
+        <h1 class="blue" >My Page Editor</h1>
         <div style="display: inline-flex; margin-left: 40%; font-size: large;" id="name">
             <div class="container">
             <p class="blue" >Name: Sajilani Senarathna<br>
@@ -75,34 +80,32 @@ button{
     </div>
         <div id="testpage">
             <a href="index.html">
-                <div class="card" id="index">
-                    <img src="https://img.freepik.com/free-vector/house-with-business-icons_24911-45456.jpg?size=626&ext=jpg&ga=GA1.1.85541617.1680184850&semt=ais" alt="index" width="100" height="auto">
+                <div class="card">
+                    <img src="/images/house-with-business-icons_24911-45456.webp" alt="index" width="100" height="auto">
                 <div class="details">
-                    <h4>Home</h4>
+                    <h2>Home</h2>
                 </div>    
             </div></a>
             <a href="comment_form.html">
-                <div class="card" id="index">
-                    <img src="https://media.istockphoto.com/id/1124737548/vector/print.jpg?s=612x612&w=0&k=20&c=3_K7kEusSXGHPFPb6KVY3diXjWImyzyIl1ok18U1Q38=" alt="index" width="100" height="auto">
+                <div class="card" >
+                    <img src="/images/istockphoto-1124737548-612x612.jpg" alt="index" width="100" height="auto">
                 <div class="details">
-                    <h4>Comment Form</h4>
+                    <h2>Comment Form</h2>
                 </div>    
             </div>
         </a>
         <a href="novel.html">
-            <div class="card" id="index">
-                <img src="https://img.freepik.com/free-vector/frame-with-student-girl-reading-book_25030-39076.jpg?size=626&ext=jpg&ga=GA1.1.85541617.1680184850&semt=ais" alt="index" width="100" height="auto">
+            <div class="card">
+                <img src="/images/frame-with-student-girl-reading-book_25030-39076.webp" alt="index" width="100" height="auto">
             <div class="details">
-                <h4>Novel Page</h4>
+                <h2>Novel Page</h2>
             </div>    
         </div></a>
-
-
         </div>
     </div>
     <footer>
         <p style="text-align: center;" ><a href="index.html" class="white">Back to Home</a></p>
     </footer>
-    <script src="/Scripts/script.js"></script>
+    
 </body>
 </html>
