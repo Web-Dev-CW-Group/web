@@ -1,7 +1,7 @@
 body{
   background-image: url(../images/photo-1458682625221-3a45f8a844c7.webp);
   background-size: cover;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   color: white;
 }
 h1{
@@ -56,11 +56,6 @@ h1{
 }
 .card:hover p{
   opacity: 1;
-} 
-@media only screen and (max-width: 400px) {
-  body{
-    background-image: url(../images/photo-1458682625221-3a45f8a844c7_480.webp);
-  }
 }
 @media only screen and (max-width: 600px) {
   .card{
@@ -86,7 +81,6 @@ h1{
   } 
   .card:hover {
     height: 200px;
-    /* padding: 0; */
   }
   .card:hover img{
     width: 140px;

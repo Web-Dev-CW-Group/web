@@ -124,12 +124,13 @@ function clearStatusClass(element) {
 function finish() {
   let grade;
   if (results >= 8) {
-    grade =  "<p style=\"color: green;background-color: white;\">Exelent keep up good work</p>"
+    grade =  "<p style=\" background-color: green;color:white;\">Exelent keep up good work</p>"
   }else{
-    grade = "<p style=\"color: red;background-color: white;\">Need to work hard</p>"
+    grade = "<p style=\" background-color: red;color:white;\">Need to work hard</p>"
   }
   resultLbl.innerHTML = `<h4>Congratulations, Quiz is finished. </h4><br><p>Quastions : 10</p>
   <p>Correct Answers : ${results}</p><p>Wrong Answers : ${10 - results}</p><p>Score : ${results * 10}</p>${grade}`
+  
   quizContainerElement.classList.add('hide')
   resultElement.classList.remove('hide')
 }
