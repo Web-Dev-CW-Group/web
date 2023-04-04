@@ -6,16 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comment form</title>
     <link rel="stylesheet" href="/styles/comment.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    <form action="https://formspree.io/f/meqwlpky" method="post">
-        <h1 style="text-align: center;">Comment form</h2>
-        <input name="name" type="text" placeholder="Name" id="name" autocomplete="off">
-        <input name="email" type="email" placeholder="Email" id="email" autocomplete="off">
-        <input name="contact_no" type="text" placeholder="Subject" id="subject" autocomplete="off">
-        <textarea name="comment" name="" id="" cols="30" rows="10" placeholder="Enter Message"></textarea>
-        <input type="submit" value="Send">
-    </form>
+    <header>
+        <nav class="nav">
+          <div class="logo"><a href ="index.html" aria-label="navigate to home page"><img src="Images/logo.webp" alt="" width="135" height="60"></a></div>
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <div class="nav__link ">
+          
+          <div class="nav__link ">
+            <a href="index.html">Home</a>
+            <a href="">Buy</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="student_details.html">About Us</a>
+            <a href="comment_form.html">Comments</a>
+          </div>
+        </nav>
+      </header>
+    <div id="form">
+        <form action="https://formspree.io/f/meqwlpky" method="post">
+            <h1 style="text-align: center;">Comment form</h2>
+            <input name="name" type="text" placeholder="Name" id="name" autocomplete="off">
+            <input name="email" type="email" placeholder="Email" id="email" autocomplete="off">
+            <input name="contact_no" type="text" placeholder="Subject" id="subject" autocomplete="off">
+            <textarea name="comment" name="" id="" cols="30" rows="10" placeholder="Enter Message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
     <footer>
         <p>Copyright &copy; <a href="page_editor_sajilani.html">Sajilani Senarathna</a></p>
     </footer>

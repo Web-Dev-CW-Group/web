@@ -16,8 +16,12 @@ body{
   }
 
   nav{
+    position: relative;
+    top: 0;
     background:var(--dark-blue);
     height: 80px;
+    width: 100vw;
+    z-index: 1;
   }
   a {
     text-decoration: none;
@@ -92,18 +96,22 @@ body{
       display: none;
     }
   }
+
+
+/* ---------------- foot css ---------------- */
 footer a{
   color: white;
 }
-
 footer{
-  position: relative;
+  font-size: small;
+  z-index: 999;
+  color: white;
+  position: fixed;
   bottom: 0;
   display: inline-flex;
-  height: 6vh;
+  height: 30px;
   width: 100vw;
-  background-color: rgba(49, 50, 50, 0.688);
-  color: white;
+  background-color: rgba(49, 50, 50, 0.785);
   justify-content: center;
   align-items: center;
 }
