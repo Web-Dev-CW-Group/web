@@ -54,7 +54,7 @@ article img{
     height: auto;
 }
 body{
-    background-image: url("/images/photo-1526243741027-444d633d7365.webp");
+    background-image: url("../images/photo-1526243741027-444d633d7365.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
