@@ -62,20 +62,20 @@ function setNextQuestion() {
   showQuestion(shuffledQuestions[currentQuestionIndex])
   questionNo.innerText = `Question: ${currentQuestionIndex + 1}/10`
   timeLimit = 60
-  interval = setInterval(function () {
-    timeLimit--;
-    if (timeLimit >= 10) {
-      timeElement.innerText = `${timeLimit}`
-    }else{
-      timeElement.innerText = `0${timeLimit}`
-      if (timeLimit == 0) {
-        showAnswers()
-      }
-    }},1000)
+  interval = setInterval(timeChange,1000)
   currentQuestionIndex++
 }
 
-
+function timeChange() {
+  timeLimit--;
+  if (timeLimit >= 10) {
+    timeElement.innerText = `${timeLimit}`
+  }else{
+    timeElement.innerText = `0${timeLimit}`
+    if (timeLimit == 0) {
+      showAnswers()
+    }
+  }}
 
 function resetState() {
   while (answerButtonsElement.firstChild) {
