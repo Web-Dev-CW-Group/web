@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
     <title>Quiz</title>
     <meta name="description" content="Quiz">
     <meta name="keywords" content="Quiz, quiz, web design, web design project">
@@ -12,8 +11,8 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link type="text/css" rel="stylesheet" href="styles/style.css">
     <link type="text/css" rel="stylesheet" href="styles/quiz_styles.css">
-    <script type="module" src="/scripts/script.js" ></script>
-    <script type="module" src="/scripts/quiz_script.js" ></script>
+    <script src="scripts/script.js" defer ></script>
+    <script src="scripts/quiz_script.js" defer ></script>
 </head>
 <body>
     <!-- Thejan Vithanage -->
@@ -39,7 +38,6 @@
       <div class="container hide" id="quiz-container">
           <div id="header">
             <p id="question-no">Question: 1/10</p>
-            <p id="test"></p>
             <p >Time: <span id="time">60</span></p>
           </div>
           <p id="question">Test One</p>
@@ -57,6 +55,7 @@
         <h2>Result</h2>
         <hr>
         <div id="results"></div>
+        <button type="button" class="btn" id="restart_btn">Restart</button>
       </div>
     </div>
     <footer>

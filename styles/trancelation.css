@@ -1,4 +1,3 @@
-
 article{
     background-color: #fff;
     border: 1px solid #ccc;
@@ -54,16 +53,11 @@ article img{
     height: auto;
 }
 body{
-    background-image: url("/images/photo-1526243741027-444d633d7365.webp");
+    background-image: url("../images/photo-1526243741027-444d633d7365.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-@media only screen and (max-width: 400px) {
-    body{
-      background-image: url(../images/photo-1526243741027-444d633d7365_480.webp);
-    }
-  }
 #up_arrow{
     display: none; 
     position: fixed; 

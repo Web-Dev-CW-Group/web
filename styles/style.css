@@ -15,7 +15,7 @@ body{
     margin: 0;
   }
 
-  nav{
+  nav{  
     position: relative;
     top: 0;
     background:var(--dark-blue);
