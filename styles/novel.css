@@ -1,3 +1,4 @@
+
 article{
     background-color: #fff;
     border: 1px solid #ccc;
@@ -16,17 +17,23 @@ aside{
     position: fixed;
     top: 160px;
     left: 30px;
-    background-image: linear-gradient(30deg, #1173cf, #0f055e);
+    background-image: linear-gradient(30deg, #0e092044, #040730);
     border-radius: 20px;
     line-height: 1.8;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
+aside ul.b {
+    list-style-type: square;
+  }
 
 #asideTopic{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
     font-weight: 700;
 }
 aside a{
-    color: white;
+    color: #fff;
     font-weight: normal;
 }
 
@@ -49,11 +56,11 @@ article h2{
 article img{
     float: left;
     margin: 0 10px 10px 0;
-    width: 100px;
+    width: 300px;
     height: auto;
 }
 body{
-    background-image: url("");
+    background-image: url("/images/photo-1530533718754-001d2668365a.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -75,3 +82,4 @@ body{
 #up_arrow:hover{
     opacity: 1;
 }
+
