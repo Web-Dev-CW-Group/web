@@ -167,6 +167,10 @@ button{
 .buy20{
     background: #ee491c;
 }
+#center_align{
+    margin-left: 100px;
+}
+
 @media(max-width:1000px){
     .content{
         width: 45%;
