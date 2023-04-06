@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+      .col{
+            height: 80vh;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(230, 18, 18, 0);
+        }
+
+        .card-container{
+          height: 59vh;
+          display: flex;
+          justify-content: center;
+          align-content: baseline;
+          flex-wrap: wrap;
+          flex-shrink: 0;
+          margin-top: 100px;
+        }
+        .card{ 
+          background-color: rgba(4, 1, 54, 0.592);
+          color: white;
+          max-width: 300px;
+          max-height: 350px;
+          height: 250px;
+          width: 250px;
+          margin: 10px;
+          text-align: center;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          border-radius: 10px;
+          transition: 0.3s;
+          overflow: hidden;
+        }
+        .card img{
+          padding: 10px;
+          border-radius: 20px;
+          height: 250px;
+          width:250px;
+        }
+        .card p{
+          line-height: 1.8;
+          padding-top: 0;
+          opacity: 0;
+          text-align: center;
+          z-index: 2;
+          font-weight: 600;
+        }
+        .card:hover {
+          background-color: rgba(4, 1, 54, 0.796);
+          border: 5px solid white;
+          height: 350px;
+        }
+        .card:hover img{
+          width: 240px;
+        }
+        .card:hover p{
+          opacity: 1;
+        }
+        @media only screen and (max-width: 600px) {
+          .card{
+            width: 150px;
+            height: 150px;
+            
+          }
+          #card-container{
+            font-size: x-small;
+            margin-top: 50px;
+          }
+          .card a{
+            font-size: x-small;
+          }
+          .card img{
+            padding: 5px;
+            border-radius: 10px;
+            height: 150px;
+            width: 150px;;
+          }
+          .card:hover p{
+            margin-top: 0;
+          } 
+          .card:hover {
+            height: 200px;
+          }
+          .card:hover img{
+            width: 140px;
+            height: auto;
+          }
+
+        }
+    </style>
+   
+    <link rel="stylesheet" href="Styles/index_styles.css">
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <header>
+      <nav class="nav">
+        <div class="logo"><a href ="index.html" aria-label="navigate to home page"><img src="Images/logo.webp" alt="" width="135" height="60"></a></div>
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <div class="nav__link ">
+          <a href="index.html">Home</a>
+          <a href="">Buy</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="comment_form.html">Comments</a>
+          <a href="about_us.html">About Us</a>
+          <a href="">Sitemap</a>
+        </div>
+      </nav>
+    </header>
+   
+
+
+    <div class="body" id="card-container">
+      <div class="card">
+        <img src="images/st4/novels.png" alt="" width="230" height="240">
+        <p> Novels<br>   </p>
+      </div>
+      <div class="card">
+        <img src="images/st4/poetry.png" alt="" width="230" height="240">
+        <p>Poetry <br> </p>
+      </div>
+      <div class="card">
+      
+          <img src="images/st4/shortystry.png" alt="" width="230" height="240">
+        <p>Shortstory<br></p>
+        </a>
+      </div>
+      <div class="card">
+        <img src="images/st4/translation.jpg" alt="" width="230" height="240">
+        <p>Translations<br> </p>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright &copy; <a href="page_editor_gayathri.html"> Gayathri Dias</a></p>
+    </footer>
+    </html>
