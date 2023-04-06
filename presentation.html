@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student 1 Presentation Page</title>
+	<style>
+	#splash-screen {
+		display: block;
+		background-color: #367ee9;
+		text-align: center;
+		padding: 100px;}
+	#body{
+		background-image: url("images/presentation.jpg");
+	}
+	#main-page {
+		display: none;
+		background-color: #f2f2f2;
+		text-align: center;
+		padding: 50px;}
+	</style>
+</head>
+<body>
+	<div id="splash-screen">
+<h1>Presentation Page</h1>
+	<p>Group Members of this project:</p>
+	<ul>
+		<li>Thejan Vithanage</li>
+		<li>Sajilani Senarathna</li>
+		<li>Saifullah Haris</li>
+		<li>Hashini Dias</li>
+	</ul>
+	<script>
+		// Wait for 4 seconds, then redirect to another page
+		setTimeout(function() {
+			window.location.href = "index.html";
+		}, 4000);
+	</script>
+</div>
+<div id="main-page">
+<h1>Main Web Page</h1></div></body>
+</html>
