@@ -60,7 +60,7 @@ article img{
     height: auto;
 }
 body{
-    background-image: url("/images/photo-1530533718754-001d2668365a.webp");
+    background-image: url("../images/photo-1530533718754-001d2668365a.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
