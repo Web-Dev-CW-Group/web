@@ -1,7 +1,3 @@
-// import quastions and answers from json file
-// import questions from "../data/data.json" assert { type: "json" };
-// import questions from "data.js";
-
 const startBtn = document.getElementById('start-btn')
 const questionNo = document.getElementById('question-no')
 const submitBtn = document.getElementById('submit-btn')
@@ -17,7 +13,6 @@ const restart_btn = document.getElementById('restart_btn')
 let shuffledQuestions, currentQuestionIndex, results, interval, flag = true
 let timeLimit = 60
 
-// event listners
 startBtn.addEventListener('click', startGame)
 nextBtn.addEventListener('click', () => {
   displayColor(setNextQuestion)
