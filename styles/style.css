@@ -14,7 +14,6 @@ body{
   .logo{
     margin: 0;
   }
-
   nav{  
     position: relative;
     top: 0;
@@ -99,19 +98,19 @@ body{
 
 
 /* ---------------- foot css ---------------- */
-footer a{
+
+footer p{
   color: white;
+  margin: 5px;
 }
 footer{
   font-size: small;
   z-index: 999;
-  color: white;
   position: fixed;
   bottom: 0;
-  display: inline-flex;
+  display: block;
   height: 30px;
   width: 100vw;
   background-color: rgba(49, 50, 50, 0.785);
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
